@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #a8dadc;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#startBtn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+#startBtn:hover {
+  background-color: #43a047;
+}
+
+#startBtn.running {
+  background-color: #f44336;
+}
+
+#startBtn.running:hover {
+  background-color: #e53935;
+}
+
+#stepBtn {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+#stepBtn:hover {
+  background-color: #1e88e5;
+}
+
+#clearBtn {
+  background-color: #607d8b;
+  color: #fff;
+}
+
+#clearBtn:hover {
+  background-color: #546e7a;
+}
+
+#randomBtn {
+  background-color: #9c27b0;
+  color: #fff;
+}
+
+#randomBtn:hover {
+  background-color: #8e24aa;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+#speedSlider {
+  width: 90px;
+  accent-color: #a8dadc;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.stats span {
+  color: #a8dadc;
+  font-weight: 600;
+}
+
+#canvas {
+  border: 2px solid #334;
+  cursor: crosshair;
+  display: block;
+}
+
+.patterns {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.patterns button {
+  background-color: #16213e;
+  color: #a8dadc;
+  border: 1px solid #334;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+}
+
+.patterns button:hover {
+  background-color: #0f3460;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}

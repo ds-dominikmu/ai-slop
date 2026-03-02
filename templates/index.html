@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <h1>Conway's Game of Life</h1>
+    <p class="subtitle">Click cells to toggle them alive/dead &middot; Draw by dragging</p>
+
+    <div class="controls">
+      <button id="startBtn">▶ Start</button>
+      <button id="stepBtn">⏭ Step</button>
+      <button id="randomBtn">🎲 Random</button>
+      <button id="clearBtn">🗑 Clear</button>
+      <div class="speed-control">
+        <label for="speedSlider">Speed</label>
+        <input type="range" id="speedSlider" min="1" max="10" value="5" />
+      </div>
+    </div>
+
+    <div class="stats">
+      Generation: <span id="generation">0</span>
+      &nbsp;&nbsp;
+      Population: <span id="population">0</span>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <p class="section-label">Preset patterns</p>
+    <div class="patterns">
+      <button class="pattern-btn" data-pattern="Glider">Glider</button>
+      <button class="pattern-btn" data-pattern="Blinker">Blinker</button>
+      <button class="pattern-btn" data-pattern="Toad">Toad</button>
+      <button class="pattern-btn" data-pattern="Beacon">Beacon</button>
+      <button class="pattern-btn" data-pattern="Pulsar">Pulsar</button>
+      <button class="pattern-btn" data-pattern="Glider Gun">Glider Gun</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+  </body>
+</html>
